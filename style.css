@@ -49,3 +49,13 @@ h1 {
 #template {
 	display: none;
 }
+
+.green {
+	color: green;
+	font-style: italic;
+}
+
+.red {
+	color: #990000;
+	font-style: italic;
+}
