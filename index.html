@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transaction History</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"> -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>TRANSACTION HISTORY</h1>
+		</div>
+		<form class="form-inline">
+			<br>
+	  			<div class="form-group">
+	    			<div class="input-group">
+	      				<div class="input-group-addon">Transaction</div>
+	      				<input type="text" class="form-control" id="exampleInputAmount" placeholder="Description..">
+	    			</div>
+	    			<div class="input-group">
+	      				<div class="input-group-addon">Date</div>
+	      				<input type="date" class="form-control" id="exampleInputAmount" placeholder="Date">
+	      				<div class="input-group-addon">Amount</div>
+	      				<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+	    			</div>
+	  			</div>
+	  			<div class="btn-group">
+		  			<button type="submit" class="btn btn-default">Deposit</button>
+		  			<button type="submit" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    <span class="caret"></span>
+				    <span class="sr-only">Toggle Dropdown</span>
+				  </button>
+				  <ul class="dropdown-menu">
+				    <li><a href="#">Action</a></li>
+				    <li><a href="#">Another action</a></li>
+				    <li><a href="#">Something else here</a></li>
+				    <li role="separator" class="divider"></li>
+				    <li><a href="#">Separated link</a></li>
+				  </ul>
+				</div>
+		</form>	
+		
+
+
+
+
+		<table class="table table-condensed">
+			<thead>
+			  <tr>
+			  	<th>Transaction #</th>
+			  	<th>Description</th>
+			  	<th>Date</th>
+			  	<th>Deposits</th>
+			  	<th>Withdrawls</th>
+			  </tr>
+			</thead>
+			<tbody>
+
+			</tbody>
+		</table>
+	</div>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.0.js"></script>	
+	<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	border: 5px solid black;
+}
+
+.header {
+	background-color: #990000;
+	color: white;
+	padding: 20px;
+	margin-top: 10px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+h1 {
+	text-align: center;
+}
