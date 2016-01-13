@@ -19,9 +19,29 @@
 
 h1 {
 	text-align: center;
+	letter-spacing: 4px;
 }
 
 #space {
 	border: 0px;
 	opacity: 0;
+}
+
+.table {
+	margin: 20px auto;
+	width: 95%;
+}
+
+.delete {
+	color: #990000;
+	
+}
+
+.delete:hover {
+	color: #bb0000;
+	text-decoration: none;
+}
+
+#template {
+	display: none;
 }
