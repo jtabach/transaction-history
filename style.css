@@ -26,6 +26,10 @@ h1 {
 	letter-spacing: 4px;
 }
 
+h4 {
+	margin-left: 15px;
+}
+
 #space {
 	border: 0px;
 	opacity: 0;
