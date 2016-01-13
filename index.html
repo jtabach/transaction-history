@@ -41,10 +41,22 @@
 		</form>
 
 		<div class="row">
-			<div class="col-xs-6">
-				<h4>Account Balance: $<span id="accBalance">1000.00</span></h4>
+			<div class="col-xs-5">
+				<div id="filter"class="input-group">
+					<span class="input-group-addon">Filter by</span>
+		      		<div class="input-group-btn">
+			  			<button id="filterDep" type="submit" class="btn btn-default filters">Deposits
+			  			</button>
+			  			<button id="filterWith" type="submit" class="btn btn-default filters">Withdrawals
+			  			</button>
+			  			<button id="filterAll" type="submit" class="btn btn-default filters">All
+			  			</button>
+			  		</div>
+				</div>
 			</div>
-			
+			<div class="col-xs-offset-2 col-xs-5">
+				<div class="pull-right"><h4>Account Balance: $<span id="accBalance">1000.00</span></h4></div>
+			</div>
 		</div>
 
 

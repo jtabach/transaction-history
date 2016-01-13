@@ -8,6 +8,7 @@ function init() {
 	$('form').submit(getInput);
 	$('.amountType').on('click', setDeposit);
 	$('#transactions').on('click', '.delete', removeTransaction);
+	$('.filters').on('click', filterTrans);
 }
 
 function getInput(e) {
@@ -25,11 +26,11 @@ function cloneRow(amountType) {
 	$tr.children('.date').text(moment(datePreFormat).format('LL'));
 	var currency = Number($('input[type="number"]').val());
 	if (amountType === "Deposit") {
-		$tr.children('.deposit').text(currency.toFixed(2))
+		$tr.children('.deposit').text("$" + currency.toFixed(2))
 			.addClass('green');
 		accountBalance.push(currency);
 	} else {
-		$tr.children('.withdrawal').text(currency.toFixed(2))
+		$tr.children('.withdrawal').text("$" + currency.toFixed(2))
 			.addClass('red');
 		accountBalance.push(currency * -1);
 	}
@@ -57,11 +58,19 @@ function updateBalance() {
 	var myBalance = accountBalance.reduce(function(sum, num) {
 		return sum + num;
 	}).toFixed(2);
-	// console.log(myBalance);
-	console.log(accountBalance)
 	$('#accBalance').text(myBalance);
 }
 
-
+function filterTrans() {
+	var filterId = $(this).attr('id');
+	console.log(filterId);
+	$('.green, .red').parent().show();
+	if (filterId === "filterDep") {
+		$('.red').parent().hide();
+	}
+	if (filterId === "filterWith"){
+		$('.green').parent().hide();
+	}
+}
 
 
